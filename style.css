@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(144 144 144);
+}
+
+.navbar{
+    font-size: large;
+}
+
+.navItems{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.head {
+    position: relative;
+    width: 100%;
+    height: 40vw; /* Adjust the height as needed */
+    background: url('./images/img2.jpeg') no-repeat center center;
+    background-size: cover;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.head::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.614); /* Adjust the opacity (0.5) as needed */
+    z-index: 1;
+}
+.content {
+    font-size: 2rem;
+    position: relative;
+    top: 40%;
+    left: 7%;
+    z-index: 2;
+    color: white;
+    align-items: center;
+    /* padding: 100px;  */
+}
+.content a{
+    margin: 10px;
+}
+
+.facility{
+    font-weight: bold;
+}
+
+#gallery{
+    background: linear-gradient(to right, white, rgb(237, 252, 128));
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 600px; /* Set a fixed height to ensure uniformity */
+    object-fit: cover; /* Ensures the images cover the area without distortion */
+}
+
+.carousel-inner video {
+    width: 100%;
+    height: 600px; /* Set a fixed height to ensure uniformity */
+     object-fit:contain; 
+}
+
+#about{
+    background: linear-gradient(to right, white, rgb(237, 252, 128));
+    border-radius: 15px;
+    font-size: larger;
+    padding: 20px;
+    
+}
+
+.room{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+#rooms{
+    background: linear-gradient(to right, white, rgb(237, 252, 128));
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 250px; /* Set a fixed height for the images */
+}
+
+.heading h1{
+    text-align: center;
+    padding: 10px;
+    font-weight:900;
+}
+
+#contact{
+    background: linear-gradient(to right, white, rgb(237, 252, 128));
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.icon{
+    width: 65px;
+    height :65px;
+    border-radius: 50px;
+}
+
+
+.icons{
+    /* justify-content: center; */
+    padding: auto;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+}
+
+.icons p{
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.footer{
+    background-color: black;
+}
+.footer div a{
+    /* text-decoration: none; */
+    color: white;
+    font-size: larger;
+}
+
+.footer div p{
+    padding-top: 20px;
+    color: white;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 30px;
+    top: 50%;
+}
+
+.carousel-control-prev{
+    left: 15px;
+}
+
+.carousel-control-next{
+    right: 15px;
+}
+
+.carousel-item {
+    position: relative;
+}
+.carousel-item video {
+    position: relative;
+    z-index: 5;
+}
+
+.fixed-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    z-index: 2;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); */
+}
+
+
+@media screen and (max-width: 700px) {
+    .icons p{
+        display: none;
+    }
+
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-inner img{
+        height: 400px;
+    }
+    .carousel-inner video{
+        height: 395px;
+    }
+
+    .icon{
+        width: 55px;
+        height :55px;
+        border-radius: 50px;
+    }
+
+    #location iframe{
+        height: 300px;
+    }
+
+    .head{
+        height: 350px;
+    }
+
+    .content{
+        font-size: 18px;
+    }
+}
+
