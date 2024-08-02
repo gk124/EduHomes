@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/home_icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>EduHomes</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-full fixed-top" style="width: 100%;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: rgb(182, 198, 3);">
+                <h2>EduHomes</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="flase" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navItems" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#rooms">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#gallery">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <div class="container-fluid bg-dark head" style="max-width: 1500px;">
+        <!-- <img width="100%" height="100%" src="./images/img2.jpeg" alt="The Hotel" class="img-fluid"> -->
+        <div class="content">
+            <p>A HOME AWAY FROM HOME</p>
+            <a href="#contact" class="btn btn-secondary btn-lg">Book Now</a>
+        </div>
+    </div>
+
+    <hr class="my-5" style="width: 90%; margin: 0 auto; color: white;">
+
+    <!-- gallery -->
+
+    <div class="container my-5" id="gallery">
+        <div class="heading">
+            <h1>Gallery</h1>
+        </div>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/img1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/img2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/img4.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/img5.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/img6.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/img7.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/img8.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/img10.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/img11.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/img12.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100 px-5" controls muted autoplay>
+                        <source src="./images/vid1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100 px-5" controls muted autoplay>
+                        <source src="./images/vid2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <hr class="my-5" style="width: 90%; margin: 0 auto; color: white;">
+
+    <!-- rooms -->
+    <div class="container my-5" id="rooms">
+        <div class="heading">
+            <h1>Rooms</h1>
+        </div>
+        <div class="room">
+            <div class="card mt-5" style="width: 18rem;">
+                <img src="./images/img13.jpeg" width="100%" height="100%" class="card-img-top" alt="single room">
+                <div class="card-body">
+                    <h5 class="card-title">Single-Seater Room</h5>
+                    <div class="card-text py-3">
+                        &#8377; 25000 / month
+                    </div>
+                    <a href="#contact" class="btn btn-secondary">Book Now</a>
+                </div>
+            </div>
+            <div class="card mt-5" style="width: 18rem;">
+                <img src="./images/img3.jpeg" width="100%" height="100%" class="card-img-top" alt="double room">
+                <div class="card-body">
+                    <h5 class="card-title">Double-Seater Room</h5>
+                    <div class="card-text py-3">
+                        &#8377; 15000-20000 / month
+                    </div>
+                    <a href="#contact" class="btn btn-secondary">Book Now</a>
+                </div>
+            </div>
+            <div class="card mt-5" style="width: 18rem;">
+                <img src="./images/img9.jpeg" width="100%" height="100%" class="card-img-top" alt="triple room">
+                <div class="card-body">
+                    <h5 class="card-title">Triple-Seater Room</h5>
+                    <div class="card-text py-3">
+                        &#8377; 15000 / month
+                    </div>
+                    <a href="#contact" class="btn btn-secondary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5" style="width: 90%; margin: 0 auto; color: white;">
+
+
+    <!-- about section -->
+    <div class="container my-5" id="about">
+        <div class="row">
+            <div class="">
+                <div class="heading">
+                    <h1>About</h1>
+                </div>
+                <h5>
+                    Hi, freshers!! Welcome to the Delhi University life 🥳😎<br>
+                    We understand staying away from home can be stressful, with a lot of things to take care of. Well,
+                    fret not. Brought to you by students of DU, EDU Homes brings you a stay that can be both comfortable
+                    and fun. With 4 time homely meals, and a reliable pick-up and drop service, you can be assured about
+                    your stay in and around North Campus ✨
+                </h5>
+                <br>
+                <h5>Check out some of our facilities:</h5>
+                <ol class="facility">
+                    <li>Fully Air-conditioned </li>
+                    <li>Free WiFi </li>
+                    <li>Laundry service </li>
+                    <li>Medical facilities </li>
+                    <li>Career counseling </li>
+                    <li>Fully furnished rooms with spacious terrace </li>
+                    <li>R.O Water Dispenser </li>
+                    <li>Timely Sanitisation </li>
+                    <li>Power Backup </li>
+                    <li>Pick and drop service </li>
+                </ol>
+
+                <br>
+                <h5>We offer three types of rooms, including triple, double and single seater rooms. The rates are as
+                    follows:</h5>
+                <ol class="facility">
+                    <li>Triple-seater rooms: 15000 per month 🌼</li>
+                    <li>Double-seater rooms: 15000-20000 per month 👯🏻‍♀️</li>
+                    <li>Single-seater rooms: 25000per month 💃🏼</li>
+                </ol>
+
+                <h5>So don't wait. Get your visit booked today, and make a home away from home!</h5>
+                <br>
+                <br>
+
+                <h6 style="text-align: end;"> - Shakti Singh &#40; Owner &#41;</h6>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5" style="width: 90%; margin: 0 auto; color: white;">
+
+    <!-- location -->
+    <div class="container my-5" id="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.2682079302244!2d77.2029838!3d28.6816225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd4d4220494b%3A0xdda4dfefb28f0715!2sEdu%20homes!5e0!3m2!1sen!2sin!4v1722352715729!5m2!1sen!2sin"
+            width="100%" height="500vw" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <hr class="my-5" style="width: 90%; margin: 0 auto; color: white;">
+
+    <!-- contact -->
+    <div class="container my-5" id="contact">
+        <div class="heading">
+            <h1>Contact</h1>
+        </div>
+
+        <div class="contact ">
+            <div class="icons">
+                <a href="tel:+918826866349"><img class="icon"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw-_KAJELwPDC1yRVBK9cy4ctIy_3NiZa-_g&s"
+                        alt="" /></a>
+                <p> : +918826866349</p>
+            </div>
+            <div class="icons">
+                <a href="mailto:homesedu677@gmail.com"><img class="icon"
+                        src="https://logowik.com/content/uploads/images/gmail-new-icon5198.jpg" alt=""></a>
+                <p> : homesedu677@gmail.com</p>
+            </div>
+            <div class="icons">
+                <a href="https://maps.google.com/maps/place//data=!4m2!3m1!1s0x390cfd4d4220494b:0xdda4dfefb28f0715?entry=s&sa=X&ved=1t:8290&hl=en-in&ictx=111"
+                    target="_blank"><img class="icon" src="https://i.pngimg.me/thumb/f/720/m2i8i8K9K9H7Z5m2.jpg"
+                        alt=""></a>
+                <p> : D-175 kamla nagar , near sparx mall , New Delhi</p>
+            </div>
+            <div class="icons">
+                <a href="https://wa.me/+918826866349" target="_blank"><img class="icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt=""></a>
+                <p> : +918826866349</p>
+            </div>
+        </div>
+
+    </div>
+
+    <hr class="my-5" style="width: 90%; margin: 0 auto; color: white;">
+
+    <footer class="footer">
+        <div>
+            <a href="#">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+            <p>Copyright <sup>&#169;</sup>&nbsp; EduHomes &nbsp;</p>
+        </div>
+        <hr class="my-5" style="width: 90%; margin: 0 auto; color: white;">
+    </footer>
+
+    <div class="fixed-icon">
+        <a href="tel:+918826866349"><img class="icon"
+                src="https://e7.pngegg.com/pngimages/759/922/png-clipart-telephone-logo-iphone-telephone-call-smartphone-phone-electronics-text-thumbnail.png"
+                alt="" /></a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
